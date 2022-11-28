@@ -1,0 +1,45 @@
+@use '../styles/abstracts/colors' as *;
+
+:root{
+    color-scheme: dark;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    h1{
+        color: $gray-100;
+    }
+    ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: $gray-100;
+        li{
+            margin: 1rem;
+        }
+    }
+}
+
+.light {
+    .text {
+        color: $gray-800
+    }
+    .background {
+        background-color: $blue-500
+    }
+}
+
+.dark {
+    .text {
+        color: $gray-100
+    }
+    .background {
+        background-color: $orange-500
+    }
+}
