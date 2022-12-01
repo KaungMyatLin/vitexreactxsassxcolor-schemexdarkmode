@@ -1,0 +1,20 @@
+.light .text {
+  color: #111827;
+}
+.light .background {
+  background-color: #F9FAFB;
+}
+
+.dark .text {
+  color: #F9FAFB;
+}
+.dark .background {
+  background-color: #111827;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

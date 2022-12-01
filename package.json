@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "compile:scss": "sass --no-source-map src/styles/main.scss:src/styles/compilemain.css --style expanded",
-    "prefix:css": "postcss src/styles/compilemain.css: -u autoprefixer -b \"last 10 versions\" -o src/styles/main.prefixed.css",
+    "prefix:css": "postcss src/styles/compilemain.css -u autoprefixer -b \"last 10 versions\" -o src/styles/main.prefixed.css",
     "compress:css": "sass --no-source-map src/styles/main.prefixed.css:src/styles/main.min.css",
     "build:css": "npm-run-all compile:scss prefix:css compress:css",
     "dev": "vite",
