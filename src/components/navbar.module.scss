@@ -4,7 +4,7 @@
     color-scheme: dark;
 }
 
-.nav {
+@mixin nav() {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -23,12 +23,17 @@
     }
 }
 
+.nav {
+    @include nav();
+}
+
 @media (prefers-colors-scheme: light) {
-    .text {
-        color: $gray-900
-    }
-    .background {
+    .nav {
+        @include nav();
         background-color: $blue-500
+        h1, ul {
+            color: $gray-900
+        }
     }
 }
 @media (prefers-colors-scheme: dark) {

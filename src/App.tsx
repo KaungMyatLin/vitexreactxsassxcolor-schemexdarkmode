@@ -1,4 +1,4 @@
-import './styles/_main.scss'
+import './styles/main.scss'
 import './styles/base/reset.scss'
 import { useContext } from 'react'
 import { ThemeContext } from './context/ThemeContext'
