@@ -7,7 +7,6 @@
     align-items: center;
     color: $gray-900;
     h1 {
-        background-color: green;
         margin: 0;
     }
     ul{
@@ -17,7 +16,6 @@
         list-style-type: none;
         font-weight: bold;
         cursor: pointer;
-        background-color: yellow;
         margin:0;
         padding:0;
         li{
@@ -28,16 +26,30 @@
 
 .nav {
     @include nav();
-    @media (color-scheme: light) {
+    @media (color-scheme:light) {
         background-color: $blue-500;
         h1, ul {
-            color: $gray-900
+            color: $gray-900;
         }
     }
-    @media (color-scheme: dark) {
+    @media (color-scheme:dark) {
         background-color: $orange-500;
         h1, ul {
-            color: $gray-100
+            color: $gray-100;
         }
+    }
+}
+
+.light {
+    background-color: $blue-500;
+    h1, ul {
+        color: $gray-900;
+    }
+}
+
+.dark {
+    background-color: $orange-500;
+    h1, ul {
+        color: $gray-100;
     }
 }
