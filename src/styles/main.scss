@@ -1,4 +1,13 @@
 @import './abstracts/_colors';
+@import './base/reset';
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    justify-items: center;
+    align-items: center;
+}
 
 .light {
     .text {
@@ -18,9 +27,3 @@
     }
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}

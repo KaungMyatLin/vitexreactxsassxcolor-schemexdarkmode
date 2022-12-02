@@ -1,11 +1,11 @@
 import {useContext} from 'react'
 import { ThemeContext } from '../context/ThemeContext'
-import './navbar.module.scss'
+import classes from './navbar.module.css'
 export const Navbar = () => {
     const {theme} = useContext(ThemeContext)
     document.documentElement.style.colorScheme = theme
     return (
-        <nav className={`nav ${theme}`}>
+        <nav className={`${classes.nav} ${theme}`}>
             <h1> Logo </h1>
             <ul>
                 <li>About</li>
