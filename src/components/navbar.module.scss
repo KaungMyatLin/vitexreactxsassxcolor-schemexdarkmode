@@ -1,8 +1,4 @@
-@use '../styles/abstracts/colors' as *;
-
-:root{
-    color-scheme: dark;
-}
+@use '../styles/base/_colors' as *;
 
 @mixin nav() {
     display: flex;
@@ -10,6 +6,10 @@
     justify-content: space-around;
     align-items: center;
     color: $gray-900;
+    h1 {
+        background-color: green;
+        margin: 0;
+    }
     ul{
         display:flex;
         flex-direction: row;
@@ -17,6 +17,9 @@
         list-style-type: none;
         font-weight: bold;
         cursor: pointer;
+        background-color: yellow;
+        margin:0;
+        padding:0;
         li{
             margin: 1rem;
         }
@@ -25,13 +28,13 @@
 
 .nav {
     @include nav();
-    @media (prefers-color-scheme: light) {
+    @media (color-scheme: light) {
         background-color: $blue-500;
         h1, ul {
             color: $gray-900
         }
     }
-    @media (prefers-color-scheme: dark) {
+    @media (color-scheme: dark) {
         background-color: $orange-500;
         h1, ul {
             color: $gray-100

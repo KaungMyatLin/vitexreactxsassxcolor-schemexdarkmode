@@ -1,3 +1,4 @@
+import './App.css'
 import './styles/main.scss'
 import { useContext } from 'react'
 import { ThemeContext } from './context/ThemeContext'
@@ -5,7 +6,6 @@ import Navbar from './components'
 
 function App() {
   const { theme, togThemeHdl} = useContext(ThemeContext)
-  console.log("App.tsx theme is: _" + theme)
   return (
     <div className={theme}>
       <Navbar />
