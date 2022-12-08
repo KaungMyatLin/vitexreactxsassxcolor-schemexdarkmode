@@ -1,5 +1,4 @@
 {
-  "name": "vitereactsassdarkmode",
   "scripts": {
     "compile:scss": "sass --no-source-map src/styles/main.scss:src/styles/main.compile.css --style expanded",
     "prefix:css": "postcss src/components/navbar.module.css -u autoprefixer -b \"last 10 versions\" -o sass/main.prefixed.css",
